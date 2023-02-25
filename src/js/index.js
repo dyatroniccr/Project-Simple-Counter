@@ -13,6 +13,10 @@ import SecondsCounter from "./component/secondsCounter.jsx";
 let tiempoSegundos = 0;
 let decenasSeconds = 0;
 let centenaSeconds = 0;
+let milesSeconds = 0;
+let diezmilesSeconds = 0;
+let cienmilesSeconds = 0;
+
 
 setInterval(() => {
     tiempoSegundos = tiempoSegundos + 1 
@@ -25,13 +29,26 @@ setInterval(() => {
         tiempoSegundos=0
         decenasSeconds++
     }
-    if(decenasSeconds%6==0 && decenasSeconds!=0){
+    if(decenasSeconds%10==0 && decenasSeconds!=0){
         decenasSeconds=0
         centenaSeconds++
     }
+    if(centenaSeconds%10==0 && centenaSeconds!=0){
+        centenaSeconds=0
+        milesSeconds++
+    }
+    if(milesSeconds%10==0 && milesSeconds!=0){
+        milesSeconds=0
+        diezmilesSeconds++
+    }
+    if(diezmilesSeconds%10==0 && diezmilesSeconds!=0){
+        diezmilesSeconds=0
+        cienmilesSeconds++
+    }
     //switch(true)
 
-    ReactDOM.render(<SecondsCounter centenaSeconds={centenaSeconds} decenasSeconds={decenasSeconds} seconds={tiempoSegundos}/>, document.querySelector("#app"));
+    ReactDOM.render(<SecondsCounter cienmilesSeconds={cienmilesSeconds} diezmilesSeconds={diezmilesSeconds} milesSeconds={milesSeconds} centenaSeconds={centenaSeconds} decenasSeconds={decenasSeconds} seconds={tiempoSegundos}/>, document.querySelector("#app"));
 
-}, 100)
+}, 1);
+
 //ReactDOM.render(<Home />, document.querySelector("#app"));
