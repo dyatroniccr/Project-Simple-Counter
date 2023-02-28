@@ -10,18 +10,62 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-.btn {
+/*.btn {
     padding: 25px;
     font-size: 50px;
 }
 
-.col {
+/*.col {
     padding: 25px;
     font-size: 50px; 
        
-}
+}*/
 
 .row {    
     width: 100%;
     padding: 370px;
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .btn {
+        --bs-btn-padding-y: 0.5rem;
+        --bs-btn-padding-x: 1.1rem;
+        --bs-btn-font-size: 4rem;
+        --bs-btn-border-radius: 1rem;        
+    }
   }
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .btn {
+        --bs-btn-padding-y: 0.5rem;
+        --bs-btn-padding-x: 1rem;
+        --bs-btn-font-size: 5rem;
+        --bs-btn-border-radius: 1rem;       
+    }
+  }
+
+@media (min-width: 850px) and (max-width: 999px) {
+    .btn {
+        --bs-btn-padding-y: 0.5rem;
+        --bs-btn-padding-x: 1rem;
+        --bs-btn-font-size: 5rem;
+        --bs-btn-border-radius: 1rem;        
+    }
+  }
+
+@media (min-width: 700px) and (max-width: 849px) {
+    .btn {
+        --bs-btn-padding-y: 0.5rem;
+        --bs-btn-padding-x: 1rem;
+        --bs-btn-font-size: 2.3rem;
+        --bs-btn-border-radius: 1rem;        
+    }
+  }
+  /*@media (min-width: 700px) and (max-width: 849px) {
+    #number {
+        --bs-padding-y: 0.5rem;
+        --bs-padding-x: 1rem;
+        --bs-font-size: 2.3rem;
+        --bs-border-radius: 1rem;        
+    }
+  }*/

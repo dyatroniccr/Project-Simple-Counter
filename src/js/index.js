@@ -29,7 +29,7 @@ setInterval(() => {
         tiempoSegundos=0
         decenasSeconds++
     }
-    if(decenasSeconds%10==0 && decenasSeconds!=0){
+    if(decenasSeconds%6==0 && decenasSeconds!=0){
         decenasSeconds=0
         centenaSeconds++
     }
@@ -37,18 +37,30 @@ setInterval(() => {
         centenaSeconds=0
         milesSeconds++
     }
-    if(milesSeconds%10==0 && milesSeconds!=0){
+    if(milesSeconds%6==0 && milesSeconds!=0){
         milesSeconds=0
         diezmilesSeconds++
     }
     if(diezmilesSeconds%10==0 && diezmilesSeconds!=0){
         diezmilesSeconds=0
         cienmilesSeconds++
+        
+    }
+    if(cienmilesSeconds==2 && diezmilesSeconds==4){
+        cienmilesSeconds=3
+    }
+    if(cienmilesSeconds%3==0 && cienmilesSeconds!=0){
+        tiempoSegundos=0
+        decenasSeconds=0
+        centenaSeconds=0
+        milesSeconds=0
+        diezmilesSeconds=0
+        cienmilesSeconds=0
     }
     //switch(true)
 
     ReactDOM.render(<SecondsCounter cienmilesSeconds={cienmilesSeconds} diezmilesSeconds={diezmilesSeconds} milesSeconds={milesSeconds} centenaSeconds={centenaSeconds} decenasSeconds={decenasSeconds} seconds={tiempoSegundos}/>, document.querySelector("#app"));
 
-}, 1);
+}, 1000);
 
 //ReactDOM.render(<Home />, document.querySelector("#app"));
