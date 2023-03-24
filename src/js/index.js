@@ -9,6 +9,7 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 import SecondsCounter from "./component/secondsCounter.jsx";
 
+
 //render your react application
 let tiempoSegundos = 0;
 let decenasSeconds = 0;
@@ -19,7 +20,7 @@ let cienmilesSeconds = 0;
 
 
 setInterval(() => {
-    tiempoSegundos = tiempoSegundos + 1 
+    tiempoSegundos = tiempoSegundos + 1
        
     /*if (tiempoSegundos>9){
         tiempoSegundos=0
@@ -63,4 +64,4 @@ setInterval(() => {
 
 }, 1000);
 
-//ReactDOM.render(<Home />, document.querySelector("#app"));
+//ReactDOM.render(<App />, document.querySelector("#app"));

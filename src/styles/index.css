@@ -1,71 +1,15 @@
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
-/*.btn {
-    padding: 25px;
-    font-size: 50px;
+.principalCounter div {
+    display: inline-block;
+    font-size: 60px;
+    line-height: 60px;
+    height: 80px;
+    background-color: #6b6666;
+    color: white;
+    padding: 15px; 
+    margin-top: 200px;
+    margin-bottom: 200px;     
 }
 
-/*.col {
-    padding: 25px;
-    font-size: 50px; 
-       
-}*/
 
-.row {    
-    width: 100%;
-    padding: 370px;
-}
 
-@media (min-width: 1200px) and (max-width: 1500px) {
-    .btn {
-        --bs-btn-padding-y: 0.5rem;
-        --bs-btn-padding-x: 1.1rem;
-        --bs-btn-font-size: 4rem;
-        --bs-btn-border-radius: 1rem;        
-    }
-  }
-
-@media (min-width: 1000px) and (max-width: 1200px) {
-    .btn {
-        --bs-btn-padding-y: 0.5rem;
-        --bs-btn-padding-x: 1rem;
-        --bs-btn-font-size: 5rem;
-        --bs-btn-border-radius: 1rem;       
-    }
-  }
-
-@media (min-width: 850px) and (max-width: 999px) {
-    .btn {
-        --bs-btn-padding-y: 0.5rem;
-        --bs-btn-padding-x: 1rem;
-        --bs-btn-font-size: 5rem;
-        --bs-btn-border-radius: 1rem;        
-    }
-  }
-
-@media (min-width: 700px) and (max-width: 849px) {
-    .btn {
-        --bs-btn-padding-y: 0.5rem;
-        --bs-btn-padding-x: 1rem;
-        --bs-btn-font-size: 2.3rem;
-        --bs-btn-border-radius: 1rem;        
-    }
-  }
-  /*@media (min-width: 700px) and (max-width: 849px) {
-    #number {
-        --bs-padding-y: 0.5rem;
-        --bs-padding-x: 1rem;
-        --bs-font-size: 2.3rem;
-        --bs-border-radius: 1rem;        
-    }
-  }*/
