@@ -12,14 +12,13 @@ const Timer = () => {
     return (
        <>
         setInterval(() => {
-            tiempoSegundos = tiempoSegundos + 1
+            tiempoSegundos = tiempoSegundos + 1;
        
-            
             if (tiempoSegundos%10==0 && tiempoSegundos!=0) {
-                tiempoSegundos=0
-                //decenasSeconds ++
+                tiempoSegundos=0                
             }
-         } 1000);
+            
+         }, 1000);
        </>
     );
 };
